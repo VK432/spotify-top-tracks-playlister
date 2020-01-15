@@ -131,8 +131,8 @@
 
           document.getElementById('login-button').addEventListener('click', function() {
 
-            var client_id = 'da4ccc77f7ba4fe58f91cec8455b8d01'; // Your client id
-            var redirect_uri = 'https://06052e15.ngrok.io/redirect/'; // Your redirect uri
+            var client_id = process.env.SPOTIFY_CLIENT_ID; // Your client id
+            var redirect_uri = process.env.REDIRECT_URI; // Your redirect uri
 
             var state = generateRandomString(16);
 
